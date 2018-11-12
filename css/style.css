@@ -185,12 +185,14 @@ header {
 .information-area {
   display: flex;
   justify-content: center;
+  width: 1170px;
 }
 
 .information-area-black {
   margin-top: 35px;
   position: relative;
   left: 35px;
+  top: 0;
   width: 615px;
   height: 400px;
   background-color: #252525;
@@ -353,4 +355,29 @@ letter-spacing: 0.4px;
   width: 436px;
   height: 273px;
   transition: all 1s ease;
+}
+.jobs{
+  display:flex; 
+  height: 732px;
+  background: url(../img/jobs.jpg) center center no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.jobs-main{
+  width: 1170px;
+  display: flex;
+}
+.imac{
+  display: flex;
+}
+.imac-img{
+  width: 570px;
+  background: url(../img/imac.png) center center no-repeat;
+  position: relative;
+    left: 150px;
+}
+.imac-text{
+  width: 670px;
+  height: 519px;
+  background-color: #252525;
 }
