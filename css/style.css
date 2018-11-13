@@ -437,7 +437,6 @@ header {
 .we-site {
   border-left: 1px solid #969696;
   display: flex;
-  width: 100px;
   height: 410px;
   position: relative;
   align-items: center;
@@ -489,4 +488,59 @@ header {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.37px;
+}
+.prefooter{
+  height: 195px;
+  background-color: #252525;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prefooter-main{
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.prefooter-main-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.prefooter-main-block-item{
+  width: 100%;
+}
+.prefooter-item-title{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.prefooter-item-subtitle{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+}
+footer{
+  height: 76px;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+}
+.footer-main{
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-main-item{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
