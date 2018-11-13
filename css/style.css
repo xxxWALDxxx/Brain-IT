@@ -2,7 +2,6 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  color: #fff;
 }
 
 a {
@@ -378,6 +377,7 @@ header {
 }
 
 .jobs {
+  color: #fff;
   display: flex;
   height: 732px;
   background: url(../img/jobs.jpg) center center no-repeat;
@@ -507,6 +507,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align:center;
 }
 .prefooter-main-block-item{
   width: 100%;
