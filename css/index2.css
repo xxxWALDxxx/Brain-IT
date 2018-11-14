@@ -1,0 +1,417 @@
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f0f0f0;
+}
+
+.header-main-items,
+.header-main {
+  z-index: 4;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  height: 100px;
+  background-color: #f0f0f0;
+}
+
+.header-main-items {
+  display: flex;
+  align-items: center;
+  color: #252525;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 50px;
+  width: 159px;
+}
+
+.menu-link {
+  display: block;
+  width: 60px;
+  height: 40px;
+  position: relative;
+}
+
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+  display: block;
+  height: 2px;
+  width: 60px;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+}
+
+.menu-link span:before {
+  transition: all 0.2s;
+  content: '';
+  margin-top: -12px;
+}
+
+.menu-link span:after {
+  transition: all 0.2s;
+  content: '';
+  margin-top: 12px;
+}
+
+.menu-link-active span {
+  background: transparent;
+}
+
+.menu-link-active span:before {
+  transform: rotate(135deg);
+  margin-top: 0;
+}
+
+.menu-link-active span:after {
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+
+.menu {
+  height: 523px;
+  background-color: #f0f0f0;
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: -100vw;
+  transition: all 2s;
+}
+
+.menu-active {
+  top: 0;
+}
+
+.menu-action {
+  color: #252525;
+  font-family: "Open Sans";
+  font-size: 29px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.59px;
+  padding: 34px 0px 10px 0px;
+}
+
+.menu-border {
+  width: 200px;
+  border: 1px solid #969696;
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #252525;
+  padding: 10px 20px;
+  width: 230px;
+  height: 60px;
+}
+
+.menu-item:hover {
+  border: 1px solid #969696;
+}
+
+.menu-item-title {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.menu-item-subtitle {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  line-height: 24px;
+}
+section{
+  height: 1500px;
+  background: url(../img/html-css-basic.png) top center no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.section-main{
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section-main-block-html-basic{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.section-main-block-left{
+  width: 1100px;
+  height: 430px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.s-m-b-l-block{
+  margin-left: 70px;
+  margin-right: 155px;
+}
+.s-m-b-l-title{
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.59px;
+color: #ffffff;
+line-height: 32px;
+}
+.s-m-b-l-subtitle{
+  font-weight: 300;
+  letter-spacing: 0.29px;
+  color: #ffffff;
+font-family: "Open Sans";
+font-size: 16px;
+line-height: 32px;
+font-weight: 300;
+margin-right: 155px;
+}
+.s-m-b-l-border{
+  border-bottom: 1px solid #969696;
+  width: 184px;
+  margin-top:16px;
+  margin-bottom: 31px;
+}
+.s-m-b-l-button{
+  background-color: #dc3030;
+  width: 220px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+  color:#f0f0f0;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  /* Text style for "Записаться" */
+  letter-spacing: 0.32px;
+  margin-top: 42px;
+}
+.section-main-block-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+color: #ffffff;
+height: 382px;
+background-color: #ff8400;
+position: absolute;
+right: 0;
+width: 170px;
+}
+.s-m-b-r-item{
+  text-align:center;
+}
+.s-m-b-r-i-title{
+  font-family: "Open Sans";
+font-size: 32px;
+font-weight: 700;
+}
+.s-m-b-r-i-subtitle{
+  font-weight: 300;
+letter-spacing: 0.32px;
+font-family: "Open Sans";
+font-size: 16px;
+}
+.section-main-block-course{
+  height: 458px;
+background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 70px;
+  justify-content: center;
+}
+.course-title{
+  color: #252525;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 43.67px;
+  /* Text style for "В данный к" */
+  letter-spacing: 0.59px;
+}
+.course-border{
+  width: 343px;
+  border-bottom: 1px solid #969696;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+.course-block{
+  width: 975px;
+  display: flex;
+  justify-content: space-between;
+}
+.course-block-left,.course-block-right{
+  width: 50%;
+}
+.course-block-item{
+  color: #252525;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.conclusion{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.conclusion-left {
+  width: 570px;
+  
+height: 287px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 68px;
+  color: #ffffff;
+background-color: #252525;
+}
+.conclusion-left-title{
+font-family: "Open Sans";
+font-size: 32px;
+font-weight: 300;
+line-height: 43.67px;
+/* Text style for "Этот курс" */
+letter-spacing: 0.59px;
+}
+.conclusion-left-border{
+  width: 417px;
+  border-bottom: 1px solid #969696;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+.conclusion-left-subtitle{
+  font-family: "Open Sans";
+font-size: 16px;
+font-weight: 300;
+line-height: 30px;
+/* Text style for "1. Упорный" */
+letter-spacing: 0.32px;
+}
+.conclusion-right{
+  width: 631px;
+  height: 207px;
+  position: absolute;
+  background-color: #c8c8c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 0;
+  padding-left: 61px;
+}
+.conclusion-right-title{
+  color: #252525;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 43.67px;
+  /* Text style for "Результат:" */
+  letter-spacing: 0.59px;
+}
+.conclusion-right-border{
+  width: 155px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #969696;
+}
+.conclusion-right-subtitle{
+  color: #252525;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  /* Text style for "выпускник" */
+  letter-spacing: 0.32px;
+}
+
+.prefooter{
+  height: 195px;
+  background-color: #252525;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prefooter-main{
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.prefooter-main-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align:center;
+}
+.prefooter-main-block-item{
+  width: 100%;
+}
+.prefooter-item-title{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.prefooter-item-subtitle{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+}
+footer{
+  height: 76px;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+}
+.footer-main{
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-main-item{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
