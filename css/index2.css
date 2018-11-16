@@ -300,6 +300,7 @@ height: 287px;
   padding-left: 68px;
   color: #ffffff;
 background-color: #252525;
+z-index: 0;
 }
 .conclusion-left-title{
 font-family: "Open Sans";
@@ -333,6 +334,10 @@ letter-spacing: 0.32px;
   justify-content: center;
   right: 0;
   padding-left: 61px;
+  z-index: 1;
+}
+.conclusion-left:hover{
+  z-index:2;
 }
 .conclusion-right-title{
   color: #252525;

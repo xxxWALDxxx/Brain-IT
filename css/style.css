@@ -404,7 +404,12 @@ header {
   height: 410px;
   background: url(../img/imac.png) center center no-repeat;
 }
-
+.imac-img-display{
+  background:#ffffff;
+  margin: 5px 5px 0px 5px;
+  width: 560px;
+  height: 320px;
+}
 .imac-text {
   color: #ffffff;
   font-family: "Open Sans";
@@ -423,16 +428,12 @@ header {
   height: 519px;
   background-color: #252525;
   display: flex;
-  justify-content: space-between;
-  text-align: right;
-  align-items: center;
-}
-
-.we_jobs-text {
-  display: flex;
+  justify-content: center;
   flex-direction: column;
+  text-align: right;
   align-items: flex-end;
 }
+
 
 .we-site {
   border-left: 1px solid #969696;
@@ -440,11 +441,11 @@ header {
   height: 410px;
   position: relative;
   align-items: center;
-  margin-left: 90px;
+  margin-left: 10px;
   overflow: hidden;
 }
 
-.jjjj {
+.we-site>a{
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 300;
@@ -488,6 +489,9 @@ header {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.37px;
+}
+.imac-img:hover + .we_jobs{
+  background-color: green;
 }
 .prefooter{
   height: 195px;
